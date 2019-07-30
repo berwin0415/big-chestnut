@@ -1,0 +1,14 @@
+{
+    "restartable": "rs",
+    "watch": ["server","dist"],
+    "verbose": true,
+    "execMap": {
+        "js": "node --hardmony",
+        "ts": "ts-node -r ts-node/register"
+    },
+    "exec": "server/index.ts",
+    "env": {
+        "NODE_ENV": "devolopment"
+    },
+    "ext": "js ts"
+}

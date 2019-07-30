@@ -1,0 +1,32 @@
+{
+  "name": "rhino",
+  "version": "0.1.0",
+  "description": "build koa with typescript project",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.ts",
+    "build": "rm -rf dist && tsc",
+    "serve": "nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berwin0415/rhino.git"
+  },
+  "keywords": [
+    "koa",
+    "ts",
+    "typescript"
+  ],
+  "author": "berwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/berwin0415/rhino/issues"
+  },
+  "homepage": "https://github.com/berwin0415/rhino#readme",
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
+}
