@@ -1,7 +1,3 @@
-const a = 1,d = 1
-let c = 3;
-let b = 2;
+import createServer from './modules/createServer';
 
-let cc = () => {
-return 1
-}
+createServer()
