@@ -4,6 +4,7 @@ const response = () => async (ctx: any, next: any) => {
     try {
         await next()
 
+        
         ctx.body = ctx.body
             ? ctx.body
             : {
