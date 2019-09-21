@@ -1,5 +1,5 @@
 import db from '../db/mysql'
-import { STRING, Model, INTEGER } from 'Sequelize'
+import { STRING, Model, INTEGER } from 'sequelize'
 class Users extends Model {}
 
 Users.init(

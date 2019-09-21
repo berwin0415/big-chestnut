@@ -5,7 +5,7 @@ export const QueryUser:Middleware = async (ctx,next) => {
     // Users.findAll().then((res:any) => {
     //     ctx.body = res
     // })
-    await Users.create({
+    await Users.create<Users>({
         username:"aaa",
         password:"bbb"
     })

@@ -1,4 +1,4 @@
-import { Sequelize } from 'Sequelize'
+import { Sequelize } from 'sequelize'
 import { mysqlConfig } from '../configs'
 
 const { database, username, password, ...otherOptions } = mysqlConfig
