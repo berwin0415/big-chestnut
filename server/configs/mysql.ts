@@ -1,4 +1,4 @@
-import { Options } from 'Sequelize/types'
+import { Options } from 'sequelize'
 export interface IMysqlConfig extends Options{
 }
 export const mysqlConfig: IMysqlConfig = {
