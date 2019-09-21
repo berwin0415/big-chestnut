@@ -1,12 +1,9 @@
 import Router from 'koa-router'
-
+import {QueryUser} from '../../controllers/test'
 const router = new Router()
 
-router.prefix('/api')
+router.prefix('/test')
 
-router.get('/all',async (ctx,next)=>{
-    await next()
-    ctx.body = "hello mock module router"
-})
+router.get('/user',QueryUser)
 
 export default router
