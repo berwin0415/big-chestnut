@@ -1,0 +1,22 @@
+{
+    "apps": [
+        {
+            "name": "app",
+            "script": "server/index.ts",
+            "watch": true,
+            "merge_logs": true,
+            "exec_interpreter": "ts-node",
+            "env": {
+                "NODE_ENV": "development",
+                "AWESOME_SERVICE_API_TOKEN": "xxx"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            },
+            "env_staging": {
+                "NODE_ENV": "staging",
+                "TEST": true
+            }
+        }
+    ]
+}
