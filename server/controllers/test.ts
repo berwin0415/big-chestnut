@@ -14,3 +14,7 @@ export const QueryUser:Middleware = async (ctx,next) => {
         message:'ok'
     }
 }
+export const webhook:Middleware = async (ctx,next) => {
+    await next()
+    console.log(ctx)
+}
