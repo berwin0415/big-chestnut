@@ -1,5 +1,5 @@
 import Taro, { getStorageSync, navigateTo } from "@tarojs/taro";
-import { TOKEN } from "../settings/constants";
+import { TOKEN } from "../settings";
 
 const request = <Res = any, Params = Record<string, any>>(
   options: Taro.request.Option<Params>

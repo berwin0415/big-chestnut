@@ -1,31 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image, View } from "@tarojs/components";
-import { switchTab, useDidShow } from "@tarojs/taro";
-import { genStaticUrl } from "../../utils";
-import styles from "./index.module.scss";
-import { getGlobalData } from "../../settings";
-import { GLOBAL_DATA_USERINFO } from "../../settings/constants";
+import { useDispatch, useSelector } from "react-redux";
+import styles from "./index.module.less";
+import { selectUser, fetchUserInfo } from "../../store/reducers/userSlice";
 
-const HomeImage = "/images/welcome.jpg";
+const IMAGE_URL =
+  "cloud://bigchestnut-fjvk9.6269-bigchestnut-fjvk9-1302573840/welcome.jpeg";
 
-export default function Home() {
-  useDidShow(() => {
-    setTimeout(() => {
-      const user = getGlobalData(GLOBAL_DATA_USERINFO);
-      if (user.logined) {
-        switchTab({
-          url: "/pages/index/index"
-        });
-      }
-    }, 2000);
-  });
+let timer = null;
+
+const Home = () => {
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchUserInfo());
+  }, []);
 
   return (
     <View className={styles.home}>
-      <Image
-        src={genStaticUrl(HomeImage)}
-        className={styles.background}
-      ></Image>
+      <Image src={IMAGE_URL} className={styles.background}></Image>
     </View>
   );
-}
+};
+export default Home;

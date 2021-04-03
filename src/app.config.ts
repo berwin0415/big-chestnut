@@ -3,10 +3,13 @@ export default {
     "pages/home/index",
     "pages/index/index",
     "pages/mine/index",
-    "pages/login/index",
-    "pages/book/index",
-    "pages/book/chapter"
   ],
+  window: {
+    backgroundTextStyle: "light",
+    navigationBarBackgroundColor: "#fff",
+    navigationBarTitleText: "WeChat",
+    navigationBarTextStyle: "black",
+  },
   tabBar: {
     list: [
       {
@@ -27,10 +30,4 @@ export default {
     backgroundColor: "#fff",
     borderStyle: "black"
   },
-  window: {
-    backgroundTextStyle: "light",
-    navigationBarBackgroundColor: "#fff",
-    navigationBarTitleText: "WeChat",
-    navigationBarTextStyle: "black"
-  }
 };

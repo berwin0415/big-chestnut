@@ -1,13 +1,8 @@
 {
-  "name": "bigChestnut",
+  "name": "big-chestnut",
   "version": "1.0.0",
   "private": true,
-  "description": "大板栗！",
-  "templateInfo": {
-    "name": "taro-ui",
-    "typescript": true,
-    "css": "sass"
-  },
+  "description": "",
   "scripts": {
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
@@ -34,22 +29,21 @@
     "ios >= 8"
   ],
   "author": "",
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
-    "@battles/emitter": "^1.2.1",
-    "@tarojs/cli": "3.0.15",
+    "@reduxjs/toolkit": "^1.5.1",
     "@tarojs/components": "3.0.15",
     "@tarojs/react": "3.0.15",
     "@tarojs/runtime": "3.0.15",
     "@tarojs/taro": "3.0.15",
-    "lodash": "^4.17.20",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "taro-ui": "^3.0.0-alpha.3"
+    "react-redux": "^7.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
-    "@tarojs/mini-runner": "^3.0.18",
+    "@tarojs/mini-runner": "3.0.15",
     "@tarojs/webpack-runner": "3.0.15",
     "@types/react": "^16.0.0",
     "@types/webpack-env": "^1.13.6",
